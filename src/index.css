@@ -5,9 +5,15 @@
   font-family: 'Roboto', sans-serif;
 }
 
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
 html,
 body,
 #root {
   background-color: white;
   height: 100%;
 }
+

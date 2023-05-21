@@ -40,7 +40,9 @@ function Projects() {
       <Navbar />
       <div className="project_container">
         <div className="title_container">
-          <h1>Meus Projetos</h1>
+          <h1 className=" font-bold  text-gray-900 sm:text-3xl">
+          Meus Projetos
+          </h1>
           <LinkButton to="/newproject" text="Criar projeto" />
         </div>
         {message && <Message type="success" msg={message} />}
@@ -48,13 +50,7 @@ function Projects() {
           {projects.length > 0 &&
             projects.map((project) => (
               <div>
-                <ProjectCard
-              
-                  name={project.name}
-                  
-                
-                  
-                />
+                <ProjectCard name={project.name} />
               </div>
             ))}
         </Container>

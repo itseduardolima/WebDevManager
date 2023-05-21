@@ -1,33 +1,24 @@
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  background-color: #88AAFF;
-  padding: 1em;
+header {
+  background-color: #88AAFF;  
 }
 
-.list {
-  display: flex;
-  list-style: none;
-  align-items: center;
-  margin: 0 3rem;
+.menu {
+  background-color: #88AAFF;
+  
 }
 
 .item {
-  margin-right: 1em;
-}
-
-.item a {
   font-size: 1em;
   font-weight: bold;
   color: #fff;
   text-decoration: none;
 }
 
-.item a:hover {
+.item:hover {
   color: #ffe5b7;
   text-decoration: none;
 }
 
 .image{
-  width: 100px;
+  width: 70px;
 }
