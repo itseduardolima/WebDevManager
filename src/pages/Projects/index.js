@@ -10,6 +10,7 @@ import Container from "../../layout/Container";
 
 function Projects() {
   const [projects, setProjects] = useState([]);
+  const [removeLoading, setRemoveLoading] = useState(false);
 
   const location = useLocation();
   let message = "";
@@ -30,8 +31,9 @@ function Projects() {
           .then((resp) => resp.json())
           .then((data) => {
             setProjects(data);
+            setRemoveLoading(true);
           }),
-      100
+      2000
     );
   }, []);
 
@@ -41,7 +43,7 @@ function Projects() {
       <div className="project_container">
         <div className="title_container">
           <h1 className=" font-bold  text-gray-900 sm:text-3xl">
-          Meus Projetos
+            Meus Projetos
           </h1>
           <LinkButton to="/newproject" text="Criar projeto" />
         </div>
@@ -50,9 +52,20 @@ function Projects() {
           {projects.length > 0 &&
             projects.map((project) => (
               <div>
-                <ProjectCard name={project.name} />
+                <ProjectCard
+                  id={project.id}
+                  name={project.name}
+                  budget={project.budget}
+                  category={project.category.name}
+                  key={project.id}
+                  //handleRemove={removeProject}
+                />
               </div>
             ))}
+          {!removeLoading && <div className="loader_container"><span className="loader"></span></div>}
+          {removeLoading && projects.length === 0 && (
+            <p>Não há projetos cadastrados!</p>
+          )}
         </Container>
       </div>
     </div>
