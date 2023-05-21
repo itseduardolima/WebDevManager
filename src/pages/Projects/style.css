@@ -1,0 +1,14 @@
+.project_container {
+  padding: 2em;
+  margin-bottom: 3rem;
+  height: 100vh;
+  
+}
+
+.title_container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+
