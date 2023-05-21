@@ -6,9 +6,7 @@ function Base() {
   return (
     <div>
       <Navbar />
-      <div className="container">
-        <h1>Base</h1>
-      </div>
+      <h1>Base</h1>
       <Footer />
     </div>
   );

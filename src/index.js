@@ -10,6 +10,7 @@ import App from "./App";
 import Home from "./pages/Home";
 import NewProject from "./pages/NewProject";
 import Projects from "./pages/Projects";
+import Project from "./pages/Project_ID";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/projects",
         element: <Projects />,
+      },
+      {
+        path: "/project/:id",
+        element: <Project />,
       },
     ],
   },
