@@ -1,0 +1,41 @@
+.home_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home_container h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.home_container h1 span {
+  color: #ffe5b7;
+  padding: 0 0.2em;
+  background-color: #88AAFF;
+}
+
+.home_container p {
+  margin-bottom: 1.5em;
+  color: #7b7b7b;
+}
+
+.home_container img {
+  width: 500px;
+  margin: 5em 0;
+}
+
+@media only screen and (max-width: 912px) {
+  .home_container img {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .home_container img {
+    max-width: 100%;
+  }
+}
+
