@@ -7,6 +7,7 @@ import Message from "../../layout/Message";
 import LinkButton from "../../layout/LinkButton";
 import ProjectCard from "../../project/ProjectCard";
 import Container from "../../layout/Container";
+import Loading from "../../layout/Loading";
 
 function Projects() {
   const [projects, setProjects] = useState([]);
@@ -79,9 +80,7 @@ function Projects() {
               </div>
             ))}
           {!removeLoading && (
-            <div className="loader_container">
-              <span className="loader"></span>
-            </div>
+            <Loading/>
           )}
           {removeLoading && projects.length === 0 && (
             <p>Não há projetos cadastrados!</p>

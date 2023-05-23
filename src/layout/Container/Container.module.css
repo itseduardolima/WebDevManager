@@ -8,7 +8,6 @@
 }
 
 .start {
-  margin-top: 5rem;
   height: 100vh;
   width: 100%;
   justify-content: flex-start;
@@ -17,6 +16,7 @@
 }
 
 .column {
+  margin-top: 5rem;
   flex-direction: column;
   justify-content: flex-start;
 }
