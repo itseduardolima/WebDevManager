@@ -1,11 +1,11 @@
 .project_container {
+  margin-top: 130px;
   height: 1220px;
   width: 100%;
   padding: 2em;
 }
 
 .title_container {
-  margin-top: 130px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 2em;

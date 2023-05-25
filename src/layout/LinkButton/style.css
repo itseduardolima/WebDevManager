@@ -1,4 +1,6 @@
-.btn {
+.linkBtn {
+  text-align: center;
+  width: 360px;
   font-weight: bold;
   background-color: #88aaff;
   color: #fff;
@@ -8,6 +10,12 @@
   border-radius: 5px;
 }
 
-.btn:hover {
+.linkBtn:hover {
   color: #ffe5b7;
+}
+
+@media only screen and (max-width: 540px) {
+  .linkBtn {
+    max-width: 300px;
+  }
 }

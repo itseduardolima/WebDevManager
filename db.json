@@ -1,70 +1,28 @@
 {
   "projects": [
     {
-      "name": "Desenvolvimento do novo site",
-      "budget": "3000",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 3
-    },
-    {
-      "name": "Projeto xuxu",
+      "name": "Teste",
       "budget": "1000",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "services": [],
-      "id": 6
-    },
-    {
-      "name": "Projeto Extra",
-      "budget": "3000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 7
-    },
-    {
-      "name": "Marvel",
-      "budget": "5000",
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 8
-    },
-    {
-      "name": "Disney",
-      "budget": "4000",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 9
-    },
-    {
-      "name": "Projeto Almanaque",
-      "budget": "8000",
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 10
+      "cost": 500,
+      "services": [
+        {
+          "name": "Teste Serviço",
+          "cost": "100",
+          "description": "Faz isso aqui",
+          "id": "27bea12f-d6a8-4c81-bb2b-9164ffa9c187"
+        },
+        {
+          "name": "Teste Serviço 2",
+          "cost": "400",
+          "description": "Faz isso aqui",
+          "id": "a3ca8a18-f44f-4014-b26f-89286806151b"
+        }
+      ],
+      "id": 1
     }
   ],
   "categories": [

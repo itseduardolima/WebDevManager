@@ -1,4 +1,4 @@
-.btn {
+.submitBtn {
   background-color: #88aaff;
   color: #fff;
   padding: 0.7em 1.2em;
@@ -8,6 +8,6 @@
   border: none;
 }
 
-.btn:hover {
+.submitBtn:hover {
   color: #ffe5b7;
 }

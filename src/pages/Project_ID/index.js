@@ -2,8 +2,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 
-import Container from "../../layout/Container";
-import Footer from "../../layout/Footer";
+
 import Navbar from "../../layout/Navbar";
 import Loading from "../../layout/Loading";
 import "./style.css";
@@ -34,7 +33,7 @@ function Project() {
           .then((resp) => resp.json())
           .then((data) => {
             setProject(data);
-            // setServices(data.services);
+            setServices(data.services);
           }),
       2000
     );
@@ -67,6 +66,7 @@ function Project() {
   }
 
   function createService(project) {
+     setMessage("");
     // last service
     const lastService = project.services[project.services.length - 1];
 
@@ -139,58 +139,62 @@ function Project() {
   return (
     <div>
       <Navbar />
-      {project.name ? (
-        <div className="project_details">
-          <Container customClass="column">
-            {message && <Message type={type} msg={message} />}
-            <div className="details_container">
-              <h1 className=" font-bold  text-gray-900 sm:text-3x1">
-                {project.name}{" "}
-              </h1>
-              <button className="btn" onClick={toggleProjectForm}>
-                {!showProjectForm ? "Editar projeto" : "Fechar"}
-              </button>
-              {!showProjectForm ? (
-                <div className="form">
-                  <p>
-                    <span>Categoria:</span> {project.category.name}
-                  </p>
-                  <p>
-                    <span>Total do orçamento:</span> R${project.budget}
-                  </p>
-                  <p>
-                    <span>Total utilizado:</span> R${project.cost}
-                  </p>
-                </div>
-              ) : (
-                <div className="form">
-                  <ProjectForm
-                    handleSubmit={editPost}
-                    btnText="Concluir Edição"
-                    projectData={project}
-                  />
-                </div>
-              )}
-            </div>
-            <div className="service_form_container">
-              <h2 className=" font-bold  text-gray-900 sm:text-3x1">
-                Adicione um serviço:
-              </h2>
-              <button className="btn" onClick={toggleServiceForm}>
-                {!showServiceForm ? "Adicionar Serviço" : "Fechar"}
-              </button>
-              <div className="form">
-                {showServiceForm && (
-                  <ServiceForm
-                    handleSubmit={createService}
-                    btnText="Adicionar Serviço"
-                    projectData={project}
-                  />
+      <div className="container">
+        {project.name ? (
+          <div className="project_details">
+            <div className="container_details">
+              {message && <Message type={type} msg={message} />}
+              <div className="details_container">
+                <h1 className=" font-bold  text-gray-900 sm:text-6x3">
+                  {project.name}{" "}
+                </h1>
+                <button className="btn" onClick={toggleProjectForm}>
+                  {!showProjectForm ? "Editar projeto" : "Fechar"}
+                </button>
+                {!showProjectForm ? (
+                  <div className="form">
+                    <p>
+                      <span>Categoria:</span> {project.category.name}
+                    </p>
+                    <p>
+                      <span>Total do orçamento:</span> R${project.budget}
+                    </p>
+                    <p>
+                      <span>Total utilizado:</span> R${project.cost}
+                    </p>
+                  </div>
+                ) : (
+                  <div className="form">
+                    <ProjectForm
+                      handleSubmit={editPost}
+                      btnText="Concluir Edição"
+                      projectData={project}
+                    />
+                  </div>
                 )}
               </div>
+              <div className="service_form_container">
+                <h2 className=" font-bold  text-gray-900 sm:text-3x1">
+                  Adicione um serviço:
+                </h2>
+                <button className="btn" onClick={toggleServiceForm}>
+                  {!showServiceForm ? "Adicionar Serviço" : "Fechar"}
+                </button>
+                <div className="form">
+                  {showServiceForm && (
+                    <ServiceForm
+                      handleSubmit={createService}
+                      btnText="Adicionar Serviço"
+                      projectData={project}
+                    />
+                  )}
+                </div>
+              </div>
+              <h2 className=" font-bold  text-gray-900 sm:text-3x1">
+                Serviços:
+              </h2>
             </div>
-            <h2 className=" font-bold  text-gray-900 sm:text-3x1">Serviços:</h2>
-            <Container customClass="start">
+            <div className="services">
               {services.length > 0 &&
                 services.map((service) => (
                   <ServiceCard
@@ -202,14 +206,12 @@ function Project() {
                     handleRemove={removeService}
                   />
                 ))}
-              
-            </Container>
-          </Container>
-        </div>
-      ) : (
-        <Loading />
-      )}
-      <Footer />
+            </div>
+          </div>
+        ) : (
+          <Loading />
+        )}
+      </div>
     </div>
   );
 }
