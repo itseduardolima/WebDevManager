@@ -6,9 +6,7 @@ import "./style.css";
 import Message from "../../layout/Message";
 import LinkButton from "../../layout/LinkButton";
 import ProjectCard from "../../project/ProjectCard";
-import Container from "../../layout/Container";
 import Loading from "../../layout/Loading";
-import Footer from "../../layout/Footer";
 
 function Projects() {
   const [projects, setProjects] = useState([]);
@@ -66,7 +64,8 @@ function Projects() {
         </div>
         {message && <Message type="success" msg={message} />}
         {projectMessage && <Message type="success" msg={projectMessage} />}
-        <Container customClass="center">
+
+        <div className="dashboard">
           {projects.length > 0 &&
             projects.map((project) => (
               <ProjectCard
@@ -78,13 +77,13 @@ function Projects() {
                 handleRemove={removeProject}
               />
             ))}
-          {!removeLoading && <Loading />}
-          {removeLoading && projects.length === 0 && (
-            <p>Não há projetos cadastrados!</p>
-          )}
-        </Container>
+        </div>
+
+        {!removeLoading && <Loading />}
+        {removeLoading && projects.length === 0 && (
+          <p>Não há projetos cadastrados!</p>
+        )}
       </div>
-      <Footer />
     </div>
   );
 }
