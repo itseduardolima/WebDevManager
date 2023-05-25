@@ -206,6 +206,7 @@ function Project() {
                     handleRemove={removeService}
                   />
                 ))}
+              {services.length === 0 && <p>Não há serviços cadastrados.</p>}
             </div>
           </div>
         ) : (
