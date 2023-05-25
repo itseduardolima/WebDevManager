@@ -1,6 +1,7 @@
 .project_container {
+  height: 1220px;
+  width: 100%;
   padding: 2em;
-  height: 100%;
 }
 
 .title_container {

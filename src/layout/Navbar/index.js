@@ -6,13 +6,12 @@ import logo from "../../image/costs_logo.svg";
 import "./style.css";
 
 function Navbar() {
- 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50">
+    <header className="absolute inset-x-0 top-0">
       <nav
-        className="flex items-center justify-between p-4 lg:px-8"
+        className="flex items-center justify-between p-5 lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">

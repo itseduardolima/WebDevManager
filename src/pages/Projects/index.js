@@ -8,6 +8,7 @@ import LinkButton from "../../layout/LinkButton";
 import ProjectCard from "../../project/ProjectCard";
 import Container from "../../layout/Container";
 import Loading from "../../layout/Loading";
+import Footer from "../../layout/Footer";
 
 function Projects() {
   const [projects, setProjects] = useState([]);
@@ -49,7 +50,7 @@ function Projects() {
       .then((resp) => resp.json())
       .then(() => {
         setProjects(projects.filter((project) => project.id !== id));
-       setProjectMessage("Projeto removido com sucesso!");
+        setProjectMessage("Projeto removido com sucesso!");
       });
   }
 
@@ -65,28 +66,25 @@ function Projects() {
         </div>
         {message && <Message type="success" msg={message} />}
         {projectMessage && <Message type="success" msg={projectMessage} />}
-        <Container customClass="start">
+        <Container customClass="center">
           {projects.length > 0 &&
             projects.map((project) => (
-              <div>
-                <ProjectCard
-                  id={project.id}
-                  name={project.name}
-                  budget={project.budget}
-                  category={project.category.name}
-                  key={project.id}
-                  handleRemove={removeProject}
-                />
-              </div>
+              <ProjectCard
+                id={project.id}
+                name={project.name}
+                budget={project.budget}
+                category={project.category.name}
+                key={project.id}
+                handleRemove={removeProject}
+              />
             ))}
-          {!removeLoading && (
-            <Loading/>
-          )}
+          {!removeLoading && <Loading />}
           {removeLoading && projects.length === 0 && (
             <p>Não há projetos cadastrados!</p>
           )}
         </Container>
       </div>
+      <Footer />
     </div>
   );
 }

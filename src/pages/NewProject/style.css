@@ -1,6 +1,6 @@
 .newproject_container {
-  width: 450px;
-  height: 100vh;
+  width: 50%;
+  height: 540px;
   margin: 120px auto;
   padding: 3em;
 }
@@ -11,4 +11,18 @@
 
 .newproject_container p {
   color: #7b7b7b;
+}
+
+@media only screen and (max-width: 768px) {
+  .newproject_container {
+     height: 600px;
+     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 912px) {
+  .newproject_container {
+     height: 970px;
+     width: 100%;
+  }
 }

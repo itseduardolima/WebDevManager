@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import "../../layout/Footer/style.css";
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer  inset-x-0 bottom-0">
       <ul className="social_list">
         <li>
           <FaFacebook />
