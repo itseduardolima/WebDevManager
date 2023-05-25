@@ -34,7 +34,7 @@ function Projects() {
             setProjects(data);
             setRemoveLoading(true);
           }),
-      2000
+      1000
     );
   }, []);
 
