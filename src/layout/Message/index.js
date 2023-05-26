@@ -1,6 +1,5 @@
-import { useState, useEffect } from "react";
-
-import styles from "./Message.module.css";
+import { Alert, Space } from "antd";
+import { useEffect, useState } from "react";
 
 function Message({ type, msg }) {
   const [visible, setVisible] = useState(false);
@@ -19,13 +18,20 @@ function Message({ type, msg }) {
 
     return () => clearTimeout(timer);
   }, [msg]);
-
   return (
-    <>
+    <div>
       {visible && (
-        <div className={`${styles.message} ${styles[type]}`}>{msg}</div>
+        <Space
+          direction="vertical"
+          style={{
+            marginBottom: "30px",
+            width: "100%",
+          }}
+        >
+          <Alert message={msg} type={type} showIcon />
+        </Space>
       )}
-    </>
+    </div>
   );
 }
 

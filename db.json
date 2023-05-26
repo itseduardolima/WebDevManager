@@ -1,5 +1,24 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "name": "Teste",
+      "budget": "2000",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 100,
+      "services": [
+        {
+          "name": "Fazer um Layout",
+          "cost": "100",
+          "description": "Layout para mobile",
+          "id": "93ce4fd2-631d-4792-aaa9-6988208f3787"
+        }
+      ],
+      "id": 1
+    }
+  ],
   "categories": [
     {
       "id": 1,

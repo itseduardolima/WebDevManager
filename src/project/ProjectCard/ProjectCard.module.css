@@ -62,6 +62,7 @@
 
 .project_card_actions a,
 .project_card_actions button {
+  height: 40px;
   text-decoration: none;
   border: none;
   background-color: #fff;

@@ -1,5 +1,6 @@
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { DiffOutlined, EyeOutlined, HomeOutlined } from "@ant-design/icons";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../image/costs_logo.svg";
@@ -71,24 +72,25 @@ function Navbar() {
           </div>
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="py-6">
+              <div className="py-6 list">
                 <Link
                   to="/"
                   className="-mx-3 block rounded-lg item px-3 py-2.5 leading-7 "
                 >
+                  <HomeOutlined />
                   HOME
                 </Link>
                 <Link
                   to="/projects"
                   className="-mx-3 block rounded-lg item px-3 py-2.5 leading-7"
                 >
-                  PROJETOS
+                  <EyeOutlined /> PROJETOS
                 </Link>
                 <Link
                   to="/newproject"
                   className="-mx-3 block rounded-lg item px-3 py-2.5 leading-7"
                 >
-                  NOVO PROJETO
+                  <DiffOutlined /> NOVO PROJETO
                 </Link>
               </div>
             </div>

@@ -20,6 +20,14 @@
   column-gap: 2rem;
 }
 
+.no_projects {
+  margin-top: 100px;
+}
+
+.img {
+  width: 500px;
+}
+
 @media only screen and (max-width: 1297px) {
   .dashboard {
     grid-template-columns: repeat(3, 1fr);

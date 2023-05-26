@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+import no_projects from "../../image/no_projects.svg";
 import Navbar from "../../layout/Navbar";
 import "../../layout/Message/Message.module.css";
 import "./style.css";
@@ -81,7 +82,11 @@ function Projects() {
 
         {!removeLoading && <Loading />}
         {removeLoading && projects.length === 0 && (
-          <p>Não há projetos cadastrados!</p>
+          
+          <div className="no_projects">
+            <h1>Não há projetos cadastrados!</h1>
+            <img className="img" src={no_projects} alt="projects" />
+          </div>
         )}
       </div>
     </div>
