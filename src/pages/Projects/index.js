@@ -57,7 +57,7 @@ function Projects() {
       <Navbar />
       <div className="project_container">
         <div className="title_container">
-          <h1 className=" font-bold  text-gray-900 sm:text-3xl">
+          <h1 className=" font-bold text-gray-900 sm:text-3xl">
             Meus Projetos
           </h1>
           <LinkButton to="/newproject" text="Criar projeto" />

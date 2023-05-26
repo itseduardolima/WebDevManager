@@ -98,6 +98,12 @@
   }
 }
 
+@media only screen and (max-width: 1668px) {
+  .project_card {
+    max-width: 350px;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .project_card {
     max-width: 300px;
@@ -132,5 +138,17 @@
   .project_card {
     max-width: 300px;
     height: 260px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .project_card {
+    max-width: 220px;
+    height: 220px;
+  }
+
+  .project_card_actions a,
+  .project_card_actions button {
+    font-size: 0.7em;
   }
 }

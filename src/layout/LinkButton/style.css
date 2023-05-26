@@ -16,6 +16,24 @@
 
 @media only screen and (max-width: 540px) {
   .linkBtn {
-    max-width: 300px;
+    max-width: 250px;
+    padding: 0.5em 1em;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .linkBtn {
+    font-size: 0.8em;
+    max-width: 130px;
+    padding: 0.6em 1em;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .linkBtn {
+    height: 30px;
+    font-size: .7em;
+    max-width: 100px;
+    padding: 0.6em 1em;
   }
 }
