@@ -82,7 +82,6 @@ function Projects() {
 
         {!removeLoading && <Loading />}
         {removeLoading && projects.length === 0 && (
-          
           <div className="no_projects">
             <h1>Não há projetos cadastrados!</h1>
             <img className="img" src={no_projects} alt="projects" />

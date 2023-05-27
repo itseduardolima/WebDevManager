@@ -29,6 +29,10 @@
   width: 700px;
 }
 
+.teste{
+  width: 100%;
+}
+
 @media only screen and (max-width: 1280px) {
   .home_container img {
     max-width: 500px;

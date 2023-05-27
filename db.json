@@ -1,22 +1,28 @@
 {
   "projects": [
     {
-      "name": "Teste",
-      "budget": "2000",
+      "name": "Xuxu",
+      "budget": "1000",
       "category": {
         "id": "3",
         "name": "Design"
       },
-      "cost": 100,
+      "cost": 500,
       "services": [
         {
-          "name": "Fazer um Layout",
+          "name": "Fazer programa com C#",
+          "cost": "400",
+          "description": "Faz isso aqui",
+          "id": "15a8d09b-5f28-470c-ba9f-45adcaf023f4"
+        },
+        {
+          "name": "Mamada",
           "cost": "100",
-          "description": "Layout para mobile",
-          "id": "93ce4fd2-631d-4792-aaa9-6988208f3787"
+          "description": "Da boa",
+          "id": "47a5ca4b-8025-41e5-8bda-f0c9784ec8be"
         }
       ],
-      "id": 1
+      "id": 3
     }
   ],
   "categories": [
