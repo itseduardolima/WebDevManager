@@ -1,10 +1,16 @@
 header {
-  background-color: #88aaff;
+  background-color: #6f5acd;
 }
 
 .menu {
   height: 50%;
-  background-color: #88aaff;
+  background-color: #6f5acd;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
 }
 
 .item {
@@ -19,31 +25,32 @@ header {
 }
 
 .item:hover {
-  color: #ffe5b7;
+  color: #ff93dd;
   text-decoration: none;
-}
-
-.image {
-  width: 70px;
 }
 
 @media only screen and (max-width: 820px) {
   .item:hover {
-  border-left: 2px solid #ffe5b7;
-}
-
+    border-left: 4px solid #ff93dd;
+  }
+  .menu {
+    max-height: 29%;
+  }
 }
 
 @media only screen and (max-width: 414px) {
   .menu {
-    max-height: 30%;
-    background-color: #88aaff;
+    max-height: 35%;
+  }
+  .logo {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
   }
 }
 
-@media only screen and (max-width: 280px) {
+@media only screen and (max-width: 375px) {
   .menu {
-    max-height: 40%;
-    background-color: #88aaff;
+    max-height: 45%;
   }
 }

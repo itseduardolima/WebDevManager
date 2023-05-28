@@ -3,7 +3,6 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { DiffOutlined, EyeOutlined, HomeOutlined } from "@ant-design/icons";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../image/costs_logo.svg";
 import "./style.css";
 
 function Navbar() {
@@ -17,7 +16,7 @@ function Navbar() {
       >
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5">
-            <img src={logo} alt="Costs" className="image" />
+            <p className="logo">Web Soluctions</p>
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -57,10 +56,10 @@ function Navbar() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-50" />
-        <Dialog.Panel className="fixed inset-y-0 left-0 z-50 w-full overflow-y-auto menu px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 left-0 z-50 w-full overflow-y-auto menu px-6 py-6">
           <div className="flex items-center justify-between">
             <Link to="/" className="-m-1.5 p-1.5">
-              <img src={logo} alt="Costs" className="image" />
+              <p className="logo">Web Soluctions</p>
             </Link>
             <button
               type="button"
@@ -72,23 +71,23 @@ function Navbar() {
           </div>
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="py-6 list">
+              <div className="py-6">
                 <Link
                   to="/"
-                  className="-mx-3 block rounded-lg item px-3 py-2.5 leading-7 "
+                  className="-mx-3 block item px-3 py-2.5 leading-7 "
                 >
                   <HomeOutlined />
                   HOME
                 </Link>
                 <Link
                   to="/projects"
-                  className="-mx-3 block rounded-lg item px-3 py-2.5 leading-7"
+                  className="-mx-3 block item px-3 py-2.5 leading-7"
                 >
                   <EyeOutlined /> PROJETOS
                 </Link>
                 <Link
                   to="/newproject"
-                  className="-mx-3 block rounded-lg item px-3 py-2.5 leading-7"
+                  className="-mx-3 block item px-3 py-2.5 leading-7"
                 >
                   <DiffOutlined /> NOVO PROJETO
                 </Link>

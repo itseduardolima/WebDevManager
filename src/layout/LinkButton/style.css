@@ -1,8 +1,8 @@
 .linkBtn {
   text-align: center;
-  width: 360px;
+  width: 200px;
   font-weight: bold;
-  background-color: #88aaff;
+  background-color: #6F5ACD;
   color: #fff;
   padding: 0.7em 1em;
   text-decoration: none;
@@ -11,7 +11,8 @@
 }
 
 .linkBtn:hover {
-  color: #ffe5b7;
+  color: #FF93DD;
+  background-color: #523dad;
 }
 
 @media only screen and (max-width: 540px) {
@@ -24,7 +25,7 @@
 @media only screen and (max-width: 414px) {
   .linkBtn {
     font-size: 0.8em;
-    max-width: 130px;
+    max-width: 110px;
     padding: 0.6em 1em;
   }
 }

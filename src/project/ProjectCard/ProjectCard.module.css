@@ -1,14 +1,14 @@
 .project_card {
   padding: 1em;
-  border: 1px solid #88aaff;
+  border: 1px solid #6F5ACD;
   border-radius: 3px;
   width: 400px;
   height: 230px;
 }
 
 .project_card h4 {
-  background-color: #88aaff;
-  color: #ffe5b7;
+  background-color: #6F5ACD;
+  color: #f7f7f7;
   padding: 0.4em;
   margin-bottom: 1.3em;
   font-size: 1.3em;
@@ -72,7 +72,7 @@
   padding: 0.6em 1em;
   margin-right: 1em;
   cursor: pointer;
-  border: 1px solid #88aaff;
+  border: 1px solid #6F5ACD;
   transition: 0.5s;
   display: flex;
   align-items: center;
@@ -86,8 +86,8 @@
 
 .project_card_actions a:hover,
 .project_card_actions button:hover {
-  background-color: #88aaff;
-  color: #ffe5b7;
+  background-color: #6F5ACD;
+  color: #FF93DD;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -120,7 +120,7 @@
 
 @media only screen and (max-width: 768px) {
   .project_card {
-    width: 320px;
+    max-width: 320px;
   }
 }
 
@@ -130,15 +130,21 @@
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 414px) {
+  .project_card {
+    max-width: 370px;
+  }
+}
+@media only screen and (max-width: 390px) {
   .project_card {
     max-width: 330px;
+    
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 375px) {
   .project_card {
-    max-width: 300px;
+    max-width: 310px;
     height: 260px;
   }
 }

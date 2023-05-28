@@ -70,7 +70,7 @@
 
 .btn {
   border-radius: 3px;
-  background-color: #88aaff;
+  background-color: #6F5ACD;
   color: #fff;
   padding: 0.5em 1em;
   text-decoration: none;
@@ -81,7 +81,8 @@
 }
 
 .btn:hover {
-  color: #ffe5b7;
+  color: #FF93DD;
+  background-color: #523dad;
 }
 
 .form {

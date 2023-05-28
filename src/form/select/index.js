@@ -5,6 +5,7 @@ function Select({ text, name, options, handleOnChange, value }) {
     <div className="form_control">
       <label htmlFor={name}>{text}:</label>
       <select
+        required
         name={name}
         id={name}
         onChange={handleOnChange}

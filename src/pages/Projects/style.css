@@ -1,6 +1,5 @@
 .project_container {
   margin-top: 130px;
-  height: 1220px;
   width: 100%;
   padding: 2em;
 }
@@ -21,10 +20,15 @@
 }
 
 .no_projects {
-  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
 }
 
 .img {
+  margin-top: 5rem;
   width: 500px;
 }
 
