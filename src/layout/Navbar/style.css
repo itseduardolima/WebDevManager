@@ -1,5 +1,6 @@
 header {
   background-color: #6f5acd;
+  margin-bottom: 5rem;
 }
 
 .menu {
@@ -14,7 +15,7 @@ header {
 }
 
 .item {
-  margin-bottom: 1rem;
+  margin-bottom: .3rem;
   display: flex;
   gap: 10px;
   align-items: center;
@@ -29,7 +30,7 @@ header {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 1023px) {
   .item:hover {
     border-left: 4px solid #ff93dd;
   }
@@ -40,12 +41,16 @@ header {
 
 @media only screen and (max-width: 414px) {
   .menu {
-    max-height: 35%;
+    max-height: 30%;
   }
   .logo {
     font-size: 1.2em;
     font-weight: bold;
     color: white;
+  }
+
+  .item {
+    font-size: .8em;
   }
 }
 

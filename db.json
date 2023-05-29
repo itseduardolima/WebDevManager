@@ -23,17 +23,6 @@
       "id": 2
     },
     {
-      "name": "Teste",
-      "budget": "4000",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 3
-    },
-    {
       "name": "Testando",
       "budget": "1000",
       "category": {
@@ -44,7 +33,6 @@
       "services": [],
       "id": 4
     }
-    
   ],
   "categories": [
     {
