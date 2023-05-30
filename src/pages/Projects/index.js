@@ -1,13 +1,18 @@
 import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+
 import no_projects from "../../image/no_projects.svg";
 import Navbar from "../../layout/Navbar";
-import "../../layout/Message/Message.module.css";
-import "./style.css";
+import Footer from "../../layout/Footer";
 import Message from "../../layout/Message";
 import LinkButton from "../../layout/LinkButton";
 import ProjectCard from "../../project/ProjectCard";
 import Loading from "../../layout/Loading";
+
+import "../../layout/Message/Message.module.css";
+import "./style.css";
+
+
 
 function Projects() {
   const [projects, setProjects] = useState([]);
@@ -58,7 +63,7 @@ function Projects() {
       <Navbar />
       <div className="project_container">
         <div className="title_container">
-          <h1 className=" font-bold text-gray-900 sm:text-3xl">
+          <h1>
             Meus Projetos
           </h1>
           <LinkButton to="/newproject" text="Criar projeto" />
@@ -88,6 +93,7 @@ function Projects() {
           </div>
         )}
       </div>
+      <Footer/>
     </div>
   );
 }

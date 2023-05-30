@@ -87,22 +87,22 @@
     width: 350px;
   }
   .home_card {
-    height: 520px;
+    height: 300px;
     width: 350px;
   }
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 716px) {
   .second_section {
     padding: 5px;
   }
   .contend_card > p {
     margin-top: 10px;
-    font-size: 0.7em;
+    font-size: 0.5em;
   }
   .home_card {
-    height: 300px;
-    width: 350px;
+    height: 230px;
+    width: 250px;
   }
 }
 
@@ -132,7 +132,7 @@
   }
 }
 
-@media only screen and (max-width: 280px) {
+@media only screen and (max-width: 371px) {
   .home_card {
     height: 290px;
     width: 250px;

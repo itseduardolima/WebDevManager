@@ -31,7 +31,7 @@ function NewProject() {
     <div>
       <Navbar />
       <div className="newproject_container">
-        <h1 className=" font-bold  text-gray-900 sm:text-3xl">
+        <h1>
           Criar Projeto
         </h1>
         <p>Crie seu projeto para depois adicionar seus serviços</p>

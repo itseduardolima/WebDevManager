@@ -12,7 +12,11 @@
   padding: 3em;
 }
 
-.project_details h1,
+.project_details h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 .project_details h2,
 .project_details p {
   margin-bottom: 0.5em;

@@ -1,39 +1,5 @@
 {
-  "projects": [
-    {
-      "name": "Projeto Almanaque",
-      "budget": "2000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 1
-    },
-    {
-      "name": "Marvel",
-      "budget": "50000",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
-    },
-    {
-      "name": "Testando",
-      "budget": "1000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 4
-    }
-  ],
+  "projects": [],
   "categories": [
     {
       "id": 1,

@@ -145,7 +145,7 @@ function Project() {
             <div className="container_details">
               {message && <Message type={type} msg={message} />}
               <div className="details_container">
-                <h1 className=" font-bold  text-gray-900 sm:text-3xl">
+                <h1>
                   {project.name}{" "}
                 </h1>
                 <button className="btn" onClick={toggleProjectForm}>
