@@ -15,7 +15,7 @@ header {
 }
 
 .item {
-  margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
   display: flex;
   gap: 10px;
   align-items: center;
@@ -30,7 +30,14 @@ header {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
+  .logo {
+    font-size: 1.2em;
+  }
+
+  .item {
+    font-size: 0.8em;
+  }
   .item:hover {
     border-left: 4px solid #ff93dd;
   }
@@ -50,7 +57,7 @@ header {
   }
 
   .item {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 }
 
