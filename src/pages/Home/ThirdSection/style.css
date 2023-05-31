@@ -1,6 +1,7 @@
 .third_section {
   height: 100%;
   width: 100%;
+  padding: 70px;
   background-color: #e8e2ff;
   align-items: center;
   display: flex;
@@ -53,7 +54,10 @@
   color: #2b1392;
 }
 
-@media only screen and (max-width: 912px) {
+@media only screen and (max-width: 1523px) {
+  .third_section {
+    padding: 1px;
+  }
   .third_img > img {
     margin-top: 50px;
   }

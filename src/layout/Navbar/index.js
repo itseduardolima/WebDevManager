@@ -16,7 +16,7 @@ function Navbar() {
       >
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5">
-            <p className="logo">Web Soluctions</p>
+            <p className="logo">WebDevManager</p>
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -59,7 +59,7 @@ function Navbar() {
         <Dialog.Panel className="fixed inset-y-0 left-0 z-50 w-full overflow-y-auto menu px-6 py-6">
           <div className="flex items-center justify-between">
             <Link to="/" className="-m-1.5 p-1.5">
-              <p className="logo">Web Soluctions</p>
+              <p className="logo">WebDevManager</p>
             </Link>
             <button
               type="button"

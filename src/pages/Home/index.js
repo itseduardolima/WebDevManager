@@ -7,7 +7,7 @@ import ThirdSection from "./ThirdSection";
 function Home() {
   return (
     <div>
-      <Navbar />
+      <Navbar/>
       <FirstSection/>
       <SecontSection/>
       <ThirdSection/>
