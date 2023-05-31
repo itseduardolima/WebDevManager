@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaGithub } from "react-icons/fa";
 
 import "../../layout/Footer/style.css";
 function Footer() {
@@ -12,7 +12,9 @@ function Footer() {
           <FaInstagram />
         </li>
         <li>
-          <FaLinkedin />
+          <a href="https://github.com/itseduardolima/WebDevManager">
+            <FaGithub />
+          </a>
         </li>
       </ul>
       <p className="copy_right">
