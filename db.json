@@ -1,5 +1,24 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "name": "Loja Virtual",
+      "budget": "2000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 700,
+      "services": [
+        {
+          "name": "Contrar Dev Backend",
+          "cost": "700",
+          "description": "Criar API",
+          "id": "2c7f1252-e8fb-4d2c-b01a-850007613e7f"
+        }
+      ],
+      "id": 1
+    }
+  ],
   "categories": [
     {
       "id": 1,

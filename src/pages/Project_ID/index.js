@@ -10,6 +10,7 @@ import ProjectForm from "../../project/ProjectForm";
 import Message from "../../layout/Message";
 import ServiceForm from "../../service/ServiceForm";
 import ServiceCard from "../../service/ServiceCard";
+import Footer from "../../layout/Footer";
 
 function Project() {
   let { id } = useParams();
@@ -213,6 +214,7 @@ function Project() {
           <Loading />
         )}
       </div>
+      <Footer/>
     </div>
   );
 }
