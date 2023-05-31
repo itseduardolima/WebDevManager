@@ -31,19 +31,19 @@ function Navbar() {
         <div className="hidden lg:flex lg:gap-x-12 list">
           <Link
             to="/"
-            className="-mx-3 item block rounded-lg text-white px-3 py-2.5 item  leading-7 "
+            className="-mx-3 item block text-white px-3 py-2.5 item  leading-7 "
           >
             HOME
           </Link>
           <Link
             to="/projects"
-            className="-mx-3 item block rounded-lg px-3 item py-2.5 item  leading-7"
+            className="-mx-3 item block px-3 item py-2.5 item  leading-7"
           >
             PROJETOS
           </Link>
           <Link
             to="/newproject"
-            className="-mx-3 item block rounded-lg px-3 item py-2.5 item  leading-7"
+            className="-mx-3 item block px-3 item py-2.5 item  leading-7"
           >
             NOVO PROJETO
           </Link>

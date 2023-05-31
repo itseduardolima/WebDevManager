@@ -54,7 +54,22 @@
   color: #2b1392;
 }
 
-@media only screen and (max-width: 1523px) {
+@media only screen and (max-width: 1280px) {
+  .third_contend > h1 {
+    font-size: 1em;
+  }
+
+  .third_contend > p {
+    width: 100%;
+    font-size: 0.6em;
+  }
+
+  .third_img > img {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 912px) {
   .third_section {
     padding: 1px;
   }
@@ -69,16 +84,13 @@
   .third_container {
     margin: auto;
     display: flex;
+    padding: 50px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
 
   .third_contend > h1 {
-    width: 100%;
-  }
-
-  .third_contend > p {
     width: 100%;
   }
 }

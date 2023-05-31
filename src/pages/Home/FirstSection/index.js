@@ -1,4 +1,5 @@
 import home1 from "../../../image/home1.svg";
+import LinkButton from "../../../layout/LinkButton";
 
 import "./style.css";
 
@@ -16,6 +17,7 @@ function FirstSection() {
             planejamento, o WebDevManager oferece um ambiente colaborativo para
             garantir o sucesso de seus projetos.
           </p>
+          <LinkButton to="/newproject" text="Criar projeto" />
         </div>
       </div>
       <div className="home_img">

@@ -15,9 +15,7 @@ header {
 }
 
 .item {
-  margin-bottom: 0.3rem;
   display: flex;
-  gap: 10px;
   align-items: center;
   font-size: 1em;
   font-weight: bold;
@@ -28,6 +26,7 @@ header {
 .item:hover {
   color: #ff93dd;
   text-decoration: none;
+  border-bottom: 3px solid #ff93dd;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -36,9 +35,12 @@ header {
   }
 
   .item {
+    margin-bottom: 0.3rem;
+    gap: 10px;
     font-size: 0.8em;
   }
   .item:hover {
+    border-bottom: none;
     border-left: 4px solid #ff93dd;
   }
   .menu {
