@@ -7,6 +7,30 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
+      "cost": 900,
+      "services": [
+        {
+          "name": "Contrar Dev Backend",
+          "cost": "700",
+          "description": "Criar API",
+          "id": "2c7f1252-e8fb-4d2c-b01a-850007613e7f"
+        },
+        {
+          "name": "Teste",
+          "cost": "200",
+          "description": "Testando",
+          "id": "6dd3d39f-7d9b-495e-b849-b81aff097df1"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "Loja Virtual",
+      "budget": "2000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
       "cost": 700,
       "services": [
         {
@@ -16,7 +40,115 @@
           "id": "2c7f1252-e8fb-4d2c-b01a-850007613e7f"
         }
       ],
-      "id": 1
+      "id": 2
+    },
+    {
+      "name": "Loja Virtual",
+      "budget": "2000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 700,
+      "services": [
+        {
+          "name": "Contrar Dev Backend",
+          "cost": "700",
+          "description": "Criar API",
+          "id": "2c7f1252-e8fb-4d2c-b01a-850007613e7f"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "name": "Loja Virtual",
+      "budget": "2000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 700,
+      "services": [
+        {
+          "name": "Contrar Dev Backend",
+          "cost": "700",
+          "description": "Criar API",
+          "id": "2c7f1252-e8fb-4d2c-b01a-850007613e7f"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "name": "Loja Virtual",
+      "budget": "2000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 700,
+      "services": [
+        {
+          "name": "Contrar Dev Backend",
+          "cost": "700",
+          "description": "Criar API",
+          "id": "2c7f1252-e8fb-4d2c-b01a-850007613e7f"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "name": "Loja Virtual",
+      "budget": "2000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 700,
+      "services": [
+        {
+          "name": "Contrar Dev Backend",
+          "cost": "700",
+          "description": "Criar API",
+          "id": "2c7f1252-e8fb-4d2c-b01a-850007613e7f"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "name": "Loja Virtual",
+      "budget": "2000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 700,
+      "services": [
+        {
+          "name": "Contrar Dev Backend",
+          "cost": "700",
+          "description": "Criar API",
+          "id": "2c7f1252-e8fb-4d2c-b01a-850007613e7f"
+        }
+      ],
+      "id": 7
+    },
+    {
+      "name": "Loja Virtual",
+      "budget": "2000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 700,
+      "services": [
+        {
+          "name": "Contrar Dev Backend",
+          "cost": "700",
+          "description": "Criar API",
+          "id": "2c7f1252-e8fb-4d2c-b01a-850007613e7f"
+        }
+      ],
+      "id": 8
     }
   ],
   "categories": [
