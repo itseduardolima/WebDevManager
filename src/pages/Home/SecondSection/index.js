@@ -1,17 +1,17 @@
-import { MainFeatures, Title } from "./style";
+import { ContendCard, ContendTitle, Grid, HomeCard, MainFeatures, P, Subtitle, Title } from "./style";
 
 
 function SecontSection() {
   return (
     <MainFeatures>
-      <div className="second_content">
+      <ContendTitle>
         <Title>Recursos Principais</Title>
-      </div>
-      <div className="grid">
-        <div className="home_card">
-          <div className="contend_card">
-            <h3>Infraestrutura</h3>
-            <p>
+      </ContendTitle>
+      <Grid>
+        <HomeCard>
+          <ContendCard>
+            <Subtitle>Infraestrutura</Subtitle>
+            <P>
               A opção de infraestrutura no WebDevManager permite que você
               gerencie todos os aspectos técnicos relacionados ao
               desenvolvimento web. Você pode controlar seus servidores,
@@ -20,13 +20,13 @@ function SecontSection() {
               poderosas, você pode garantir que sua infraestrutura esteja
               configurada adequadamente para oferecer desempenho e segurança
               ideais para seus projetos.
-            </p>
-          </div>
-        </div>
-        <div className="home_card">
-          <div className="contend_card">
-            <h3>Desenvolvimento</h3>
-            <p>
+            </P>
+          </ContendCard>
+        </HomeCard>
+        <HomeCard>
+          <ContendCard>
+            <Subtitle>Desenvolvimento</Subtitle>
+            <P>
               A seção de desenvolvimento no WebDevManager é projetada para
               ajudar a organizar e rastrear o progresso das tarefas relacionadas
               à codificação, programação e implementação de projetos web. Você
@@ -36,13 +36,13 @@ function SecontSection() {
               desenvolvimento. Com recursos colaborativos, você pode trabalhar
               em equipe de forma eficaz e garantir a entrega de projetos de alta
               qualidade dentro dos prazos estabelecidos.
-            </p>
-          </div>
-        </div>
-        <div className="home_card">
-          <div className="contend_card">
-            <h3>Design</h3>
-            <p>
+            </P>
+          </ContendCard>
+        </HomeCard>
+        <HomeCard>
+          <ContendCard>
+            <Subtitle>Design</Subtitle>
+            <P>
               A opção de design no WebDevManager oferece suporte para a gestão
               dos aspectos visuais e de usabilidade de seus projetos web. Você
               pode gerenciar elementos de design, criar protótipos interativos,
@@ -51,13 +51,13 @@ function SecontSection() {
               ferramentas intuitivas e recursos de colaboração, você pode
               colaborar com sua equipe e criar designs atraentes e eficazes para
               seus projetos.
-            </p>
-          </div>
-        </div>
-        <div className="home_card">
-          <div className="contend_card">
-            <h3>Planejamento</h3>
-            <p>
+            </P>
+          </ContendCard>
+        </HomeCard>
+        <HomeCard>
+          <ContendCard>
+            <Subtitle>Planejamento</Subtitle>
+            <P>
               A seção de planejamento no WebDevManager permite que você defina
               metas, prazos e recursos necessários para seus projetos de
               desenvolvimento web. Com recursos de criação de cronogramas,
@@ -67,10 +67,10 @@ function SecontSection() {
               os recursos disponíveis, realizar ajustes conforme necessário e
               manter todos os membros da equipe informados sobre o andamento do
               projeto.
-            </p>
-          </div>
-        </div>
-      </div>
+            </P>
+          </ContendCard>
+        </HomeCard>
+      </Grid>
     </MainFeatures>
   );
 }

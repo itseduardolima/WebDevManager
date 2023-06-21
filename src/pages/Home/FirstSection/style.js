@@ -88,7 +88,7 @@ export const P = styled.p`
   @media only screen and (max-width: 912px) {
     width: 100%;
     margin-top: 30px;
-    font-size: 1em;
+    font-size: 1.3em;
   }
 
   @media only screen and (max-width: 540px) {
@@ -99,6 +99,11 @@ export const P = styled.p`
     width: 100%;
     margin-top: 30px;
     font-size: 0.9em;
+  }
+
+  @media only screen and (max-width: 280px) {
+  
+    font-size: 0.5em;
   }
 `;
 
@@ -133,11 +138,7 @@ export const Image = styled.img`
   }
 
   @media only screen and (max-width: 912px) {
-    max-width: 500px;
-  }
-
-  @media only screen and (max-width: 820px) {
-    max-width: 400px;
+    max-width: 600px;
   }
 
   @media only screen and (max-width: 540px) {
@@ -147,5 +148,9 @@ export const Image = styled.img`
 
   @media only screen and (max-width: 414px) {
     max-width: 400px;
+  }
+
+  @media only screen and (max-width: 280px) {
+    max-width: 300px;
   }
 `;
