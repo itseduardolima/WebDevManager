@@ -102,7 +102,6 @@ export const P = styled.p`
   }
 
   @media only screen and (max-width: 280px) {
-  
     font-size: 0.5em;
   }
 `;

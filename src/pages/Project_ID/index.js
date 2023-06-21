@@ -1,11 +1,22 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
-
+import {
+  Btn,
+  Container,
+  Details,
+  DetailsContainer,
+  Form,
+  P,
+  ProjectDetails,
+  Services,
+  Span,
+  Subtitle,
+  Title,
+} from "./style";
 
 import Navbar from "../../layout/Navbar";
 import Loading from "../../layout/Loading";
-import "./style.css";
 import ProjectForm from "../../project/ProjectForm";
 import Message from "../../layout/Message";
 import ServiceForm from "../../service/ServiceForm";
@@ -67,7 +78,7 @@ function Project() {
   }
 
   function createService(project) {
-     setMessage("");
+    setMessage("");
     // last service
     const lastService = project.services[project.services.length - 1];
 
@@ -140,48 +151,44 @@ function Project() {
   return (
     <div>
       <Navbar />
-      <div className="container">
+      <Container>
         {project.name ? (
-          <div className="project_details">
-            <div className="container_details">
+          <ProjectDetails>
+            <Details>
               {message && <Message type={type} msg={message} />}
-              <div className="details_container">
-                <h1>
-                  {project.name}{" "}
-                </h1>
-                <button className="btn" onClick={toggleProjectForm}>
+              <DetailsContainer>
+                <Title>{project.name} </Title>
+                <Btn onClick={toggleProjectForm}>
                   {!showProjectForm ? "Editar projeto" : "Fechar"}
-                </button>
+                </Btn>
                 {!showProjectForm ? (
-                  <div className="form">
-                    <p>
-                      <span>Categoria:</span> {project.category.name}
-                    </p>
-                    <p>
-                      <span>Total do orçamento:</span> R${project.budget}
-                    </p>
-                    <p>
-                      <span>Total utilizado:</span> R${project.cost}
-                    </p>
-                  </div>
+                  <Form>
+                    <P>
+                      <Span>Categoria:</Span> {project.category.name}
+                    </P>
+                    <P>
+                      <Span>Total do orçamento:</Span> R${project.budget}
+                    </P>
+                    <P>
+                      <Span>Total utilizado:</Span> R${project.cost}
+                    </P>
+                  </Form>
                 ) : (
-                  <div className="form">
+                  <Form>
                     <ProjectForm
                       handleSubmit={editPost}
                       btnText="Concluir Edição"
                       projectData={project}
                     />
-                  </div>
+                  </Form>
                 )}
-              </div>
-              <div className="service_form_container">
-                <h2 className=" font-bold  text-gray-900 sm:text-3x1">
-                  Adicione um serviço:
-                </h2>
-                <button className="btn" onClick={toggleServiceForm}>
+              </DetailsContainer>
+              <DetailsContainer>
+                <Subtitle>Adicione um serviço:</Subtitle>
+                <Btn onClick={toggleServiceForm}>
                   {!showServiceForm ? "Adicionar Serviço" : "Fechar"}
-                </button>
-                <div className="form">
+                </Btn>
+                <Form>
                   {showServiceForm && (
                     <ServiceForm
                       handleSubmit={createService}
@@ -189,13 +196,11 @@ function Project() {
                       projectData={project}
                     />
                   )}
-                </div>
-              </div>
-              <h2 className=" font-bold  text-gray-900 sm:text-3x1">
-                Serviços:
-              </h2>
-            </div>
-            <div className="services">
+                </Form>
+              </DetailsContainer>
+              <Subtitle>Serviços:</Subtitle>
+            </Details>
+            <Services>
               {services.length > 0 &&
                 services.map((service) => (
                   <ServiceCard
@@ -208,13 +213,13 @@ function Project() {
                   />
                 ))}
               {services.length === 0 && <p>Não há serviços cadastrados.</p>}
-            </div>
-          </div>
+            </Services>
+          </ProjectDetails>
         ) : (
           <Loading />
         )}
-      </div>
-      <Footer/>
+      </Container>
+      <Footer />
     </div>
   );
 }

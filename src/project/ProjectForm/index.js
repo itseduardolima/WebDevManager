@@ -1,10 +1,8 @@
-import { useEffect, useState } from "react";
-
-import Input from "../../form/Input";
 import SubmitButton from "../../form/SubmitButton";
+import Input from "../../form/Input";
 import Select from "../../form/select";
-
-import "../../project/ProjectForm/style.css";
+import { useEffect, useState } from "react";
+import { Form } from "./style.js";
 
 function ProjectForm({ handleSubmit, btnText, projectData }) {
   const [categories, setCategories] = useState([]);
@@ -43,7 +41,7 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
   }
 
   return (
-    <form onSubmit={submit} className="form">
+    <Form onSubmit={submit}>
       <Input
         type="text"
         text="Nome do projeto"
@@ -69,7 +67,7 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
         value={project.category ? project.category.id : ""}
       />
       <SubmitButton text={btnText} />
-    </form>
+    </Form>
   );
 }
 

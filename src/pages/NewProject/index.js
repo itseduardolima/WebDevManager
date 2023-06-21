@@ -1,9 +1,8 @@
 import {useNavigate} from 'react-router-dom'
-
 import Footer from "../../layout/Footer";
 import Navbar from "../../layout/Navbar";
-import "./style.css";
 import ProjectForm from "../../project/ProjectForm";
+import { Container, P, Title } from './style';
 
 function NewProject() {
 
@@ -30,13 +29,13 @@ function NewProject() {
   return (
     <div>
       <Navbar />
-      <div className="newproject_container">
-        <h1>
+      <Container>
+        <Title>
           Criar Projeto
-        </h1>
-        <p>Crie seu projeto para depois adicionar seus serviços</p>
+        </Title>
+        <P>Crie seu projeto para depois adicionar seus serviços</P>
         <ProjectForm handleSubmit={createPost} btnText="Criar Projeto" />
-      </div>
+      </Container>
       <Footer />
     </div>
   );

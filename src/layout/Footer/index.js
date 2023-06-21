@@ -1,26 +1,26 @@
 import { FaFacebook, FaInstagram, FaGithub } from "react-icons/fa";
+import { CopyRight, FooterContainer, Item, SocialList } from "./style";
 
-import "../../layout/Footer/style.css";
 function Footer() {
   return (
-    <footer className="footer inset-x-0 bottom-0">
-      <ul className="social_list">
-        <li>
+    <FooterContainer className="inset-x-0 bottom-0">
+      <SocialList>
+        <Item>
           <FaFacebook />
-        </li>
-        <li>
+        </Item>
+        <Item>
           <FaInstagram />
-        </li>
-        <li>
+        </Item>
+        <Item>
           <a href="https://github.com/itseduardolima/WebDevManager">
             <FaGithub />
           </a>
-        </li>
-      </ul>
-      <p className="copy_right">
+        </Item>
+      </SocialList>
+      <CopyRight>
         <span>WebDevManager</span> &copy; 2023
-      </p>
-    </footer>
+      </CopyRight>
+    </FooterContainer>
   );
 }
 

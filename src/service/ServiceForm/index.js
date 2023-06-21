@@ -1,8 +1,7 @@
-import { useState } from "react";
 import Input from "../../form/Input";
 import SubmitButton from "../../form/SubmitButton";
-
-import "../../project/ProjectForm/style.css";
+import { useState } from "react";
+import { Form } from "../../project/ProjectForm/style";
 
 function ServiceForm({ handleSubmit, btnText, projectData }) {
   const [service, setService] = useState({});
@@ -18,7 +17,7 @@ function ServiceForm({ handleSubmit, btnText, projectData }) {
   }
 
   return (
-    <form onSubmit={submit} className="form">
+    <Form onSubmit={submit}>
       <Input
         type="text"
         text="Nome do serviço"
@@ -41,7 +40,7 @@ function ServiceForm({ handleSubmit, btnText, projectData }) {
         handleOnChange={handleChange}
       />
       <SubmitButton text={btnText} />
-    </form>
+    </Form>
   );
 }
 

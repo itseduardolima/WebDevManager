@@ -10,9 +10,14 @@ import ProjectCard from "../../project/ProjectCard";
 import Loading from "../../layout/Loading";
 
 import "../../layout/Message/Message.module.css";
-import "./style.css";
-
-
+import {
+  Container,
+  Dashboard,
+  Img,
+  NoProjects,
+  Title,
+  TitleContainer,
+} from "./style";
 
 function Projects() {
   const [projects, setProjects] = useState([]);
@@ -61,17 +66,15 @@ function Projects() {
   return (
     <div>
       <Navbar />
-      <div className="project_container">
-        <div className="title_container">
-          <h1>
-            Meus Projetos
-          </h1>
+      <Container>
+        <TitleContainer>
+          <Title>Meus Projetos</Title>
           <LinkButton to="/newproject" text="Criar projeto" />
-        </div>
+        </TitleContainer>
         {message && <Message type="success" msg={message} />}
         {projectMessage && <Message type="success" msg={projectMessage} />}
 
-        <div className="dashboard">
+        <Dashboard>
           {projects.length > 0 &&
             projects.map((project) => (
               <ProjectCard
@@ -83,17 +86,17 @@ function Projects() {
                 handleRemove={removeProject}
               />
             ))}
-        </div>
+        </Dashboard>
 
         {!removeLoading && <Loading />}
         {removeLoading && projects.length === 0 && (
-          <div className="no_projects">
+          <NoProjects>
             <h1>Não há projetos cadastrados!</h1>
-            <img className="img" src={no_projects} alt="projects" />
-          </div>
+            <Img src={no_projects} alt="projects" />
+          </NoProjects>
         )}
-      </div>
-      <Footer/>
+      </Container>
+      <Footer />
     </div>
   );
 }
