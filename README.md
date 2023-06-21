@@ -2,7 +2,7 @@
 
 Academic Project: This project was developed in order to develop a web application.
 
-# 🖥️ Welcome
+## 🚀 Welcome
 
 WebDevManager is an online platform designed to assist
 teams and professionals to efficiently manage projects
