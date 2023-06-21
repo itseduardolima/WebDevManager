@@ -1,10 +1,11 @@
-import "./style.css";
+import { MainFeatures, Title } from "./style";
+
 
 function SecontSection() {
   return (
-    <section className="second_section">
+    <MainFeatures>
       <div className="second_content">
-        <h1>Recursos Principais</h1>
+        <Title>Recursos Principais</Title>
       </div>
       <div className="grid">
         <div className="home_card">
@@ -70,7 +71,7 @@ function SecontSection() {
           </div>
         </div>
       </div>
-    </section>
+    </MainFeatures>
   );
 }
 
