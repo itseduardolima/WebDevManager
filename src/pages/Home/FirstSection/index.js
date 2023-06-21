@@ -1,13 +1,12 @@
 import home1 from "../../../image/home1.svg";
 import LinkButton from "../../../layout/LinkButton";
-
-import "./style.css";
+import { Content, ContentContainer, HomeImg, Welcome } from "./style.js";
 
 function FirstSection() {
   return (
-    <section className="first_section">
-      <div className="content_container">
-        <div className="content">
+    <Welcome>
+      <ContentContainer>
+        <Content>
           <h1>Bem vindo ao WebDevManager</h1>
           <p>
             O WebDevManager é uma plataforma online projetada para auxiliar
@@ -18,12 +17,12 @@ function FirstSection() {
             garantir o sucesso de seus projetos.
           </p>
           <LinkButton to="/newproject" text="Criar projeto" />
-        </div>
-      </div>
-      <div className="home_img">
+        </Content>
+      </ContentContainer>
+      <HomeImg>
         <img className="image" src={home1} alt="home"></img>
-      </div>
-    </section>
+      </HomeImg>
+    </Welcome>
   );
 }
 
