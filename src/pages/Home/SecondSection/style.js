@@ -71,7 +71,7 @@ export const HomeCard = styled.div`
     width: 450px;
   }
 
-  @media only screen and (max-width: 912px) {
+  @media only screen and (max-width: 1140px) {
     height: 300px;
     width: 350px;
   }
