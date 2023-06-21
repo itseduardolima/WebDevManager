@@ -1,9 +1,10 @@
-import "../../form/SubmitButton/style.css";
+import { SubmitBtn } from "./style";
+
 
 function SubmitButton({ text }) {
   return (
     <div>
-      <button className="submitBtn">{text}</button>
+      <SubmitBtn>{text}</SubmitBtn>
     </div>
   );
 }

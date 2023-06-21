@@ -1,6 +1,3 @@
-import { useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
-
 import no_projects from "../../image/no_projects.svg";
 import Navbar from "../../layout/Navbar";
 import Footer from "../../layout/Footer";
@@ -9,6 +6,8 @@ import LinkButton from "../../layout/LinkButton";
 import ProjectCard from "../../project/ProjectCard";
 import Loading from "../../layout/Loading";
 
+import { useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 import "../../layout/Message/Message.module.css";
 import {
   Container,

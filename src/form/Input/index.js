@@ -1,8 +1,8 @@
-import "../../form/Input/style.css";
+import { FormControl } from "./style";
 
 function Input({ type, text, name, placeholder, handleOnChange, value }) {
   return (
-    <div className="form_control">
+    <FormControl>
       <label htmlFor={name}>{text}:</label>
       <input
         required
@@ -13,7 +13,7 @@ function Input({ type, text, name, placeholder, handleOnChange, value }) {
         onChange={handleOnChange}
         value={value}
       />
-    </div>
+    </FormControl>
   );
 }
 

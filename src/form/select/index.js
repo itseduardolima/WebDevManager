@@ -1,8 +1,9 @@
-import "../../form/select/style.css";
+import "./style.js";
+import { FormControl } from "./style.js";
 
 function Select({ text, name, options, handleOnChange, value }) {
   return (
-    <div className="form_control">
+    <FormControl>
       <label htmlFor={name}>{text}:</label>
       <select
         required
@@ -18,7 +19,7 @@ function Select({ text, name, options, handleOnChange, value }) {
           </option>
         ))}
       </select>
-    </div>
+    </FormControl>
   );
 }
 
