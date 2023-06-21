@@ -1,19 +1,40 @@
-# Como iniciar o Projeto
+## 🖥️ Installation
 
-Installe as dependências:
+### Frontend
 
-### `npm install`
+1. Clone this repo
+```bash
+git clone https://github.com/itseduardolima/WebDevManager.git
+```
 
-Para iniciar o projeto, você pode executar:
+2. Go to the project folder
+```bash
+cd webdevmanager
 
-### `npm run start`
+```
 
-Executa o aplicativo no modo de desenvolvimento.\
-Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo em seu navegador.
+3. Install dependencies
+```bash
+npm install
+```
 
-A página será recarregada quando você fizer alterações.\
-Você também pode ver erros de lint no console.
+4. Run Frontend
+```bash
+npm start
+```
 
-inicie também o backend logo após para os dados seres carregados, você pode executar:
+### Running the API
 
-### `npm run backend`
+
+2. Go to the API folder
+
+```bash
+cd webdevmanager
+
+```
+
+4. Run Backend
+```bash
+npm run backend
+```
+
