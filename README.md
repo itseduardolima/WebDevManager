@@ -1,15 +1,12 @@
 # 🧠 About
 
-Academic Project: This project was developed in order to develop a web application.
+Projeto Acadêmico: Este projeto foi desenvolvido com o objetivo de desenvolver uma aplicação web.
 
 ## 🚀 Welcome
 
-WebDevManager is an online platform designed to assist
-teams and professionals to efficiently manage projects
-related to the development of websites and web applications. With
-comprehensive resources for infrastructure, development, design and
-planning, WebDevManager offers a collaborative environment for
-ensure the success of your projects.
+O WebDevManager é uma plataforma online projetada para auxiliar equipes e profissionais para gerenciar projetos com eficiência
+relacionadas com o desenvolvimento de websites e aplicações web. Com recursos abrangentes para infraestrutura, desenvolvimento, design e
+planejamento, o WebDevManager oferece um ambiente colaborativo para garantir o sucesso de seus projetos.
 
 ## 🖥️ Installation
 
